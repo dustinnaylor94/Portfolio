@@ -1,0 +1,38 @@
+/*
+Color Theme
+
+Beige: #e5d0ae
+Dark Navy: #1d304c
+Soft Orange: #ed6240
+Aqua: #46af80
+Light Blue: #35a7e0
+ */
+
+body{
+    background-color: #1d304c;
+    color: #e5d0ae;
+}
+a{
+    color: #ed6240;
+}
+ul{
+    background-color: #35a7e0;
+}
+table{
+    background-color: #35a7e0;
+}
+h1, h2{
+    color: #ed6240;
+}
+#movieList{
+    width: 50%;
+}
+img{
+    border-radius: 25px;
+    border: 10px solid #ed6240;
+
+}
+table img{
+    width: 200px;
+    height: 150px;
+}
