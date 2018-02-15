@@ -7,19 +7,54 @@ Soft Orange: #ed6240
 Aqua: #46af80
 Light Blue: #35a7e0
  */
+*{
+    box-sizing: border-box;
+}
 
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 body{
     background-color: #1d304c;
     color: #e5d0ae;
 }
 a{
     color: #ed6240;
+    text-decoration: none;
 }
 ul{
-    background-color: #35a7e0;
+    background-color: rgba(35,167,224,.5);
+    border-radius: 25px;
+    border: 2px solid #ed6240 ;
+    padding: 25px;
+    font-size: 20px;
 }
 table{
-    background-color: #35a7e0;
+    background-color: rgba(35,167,224,.5);
+    border-radius: 25px;
+    border: 2px solid #ed6240 ;
+    padding: 5px;
+    font-size: 20px;
 }
 h1, h2{
     color: #ed6240;
@@ -29,10 +64,66 @@ h1, h2{
 }
 img{
     border-radius: 25px;
-    border: 10px solid #ed6240;
+    border: 5px solid #ed6240;
+    max-width: 94%;
 
+}
+#hobbyCompy{
+    height: 450px;
+    width: 425px;
 }
 table img{
     width: 200px;
     height: 150px;
+}
+#headerLogo{
+    float: right;
+    width: 150px;
+    height: 150px;
+}
+#headerTitle{
+    text-align: center;
+}
+/*header{
+    border-bottom: 3px solid #ed6240;
+    overflow: auto;
+    padding: 5px;
+}*/
+section{
+    border-radius: 25px;
+    border: 2px solid #ed6240 ;
+   /* width: 50%;*/
+    padding: 10px;
+    margin: 10px;
+    overflow: auto;
+    font-size: 20px;
+    background-color: rgba(35,167,224,.5);
+}
+section p{
+    color: #e5d0ae;
+}
+section h2{
+    text-align: center;
+}
+.highlightImg{
+    float: right;
+    height: 225px;
+    width: 212px;
+
+}
+section p span{
+    font-style: italic;
+}
+aside{
+    text-align: left;
+    border: 2px solid #e5d0ae;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: 18px;
+}
+aside h2{
+    text-align: center;
+}
+footer{
+    border-top: 2px solid #ed6240;
 }
