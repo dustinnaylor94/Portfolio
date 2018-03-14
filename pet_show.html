@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Pet Competition</title>
+
+    <meta name="description" content="Pet Competition Form">
+    <meta name="keywords" content="Pet, Competition">
+    <meta name="author" content= "Dustin Naylor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/d_tab.png"/>
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+</head>
+<body>
+<header>
+    <img src="img/d_large.png" id="headerLogo" alt="D logo"/>
+    <h1 class="headerTitle">Dustin Naylor's CS2350 Portfolio</h1>
+    <h2>Pet Competition Registration Form</h2>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="my_hobbies.html">Hobbies</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li>
+            <div class="dropDown">
+                <button>Examples &#x25BC;</button>
+                <div class= "dropDown_content">
+                    <a href="advancedCss.html">Advanced CSS</a>
+                    <a href="youthFutures.html">Youth Futures</a>
+                    <a class = "current" href="pet_show.html">Pet Comp</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<section id="pet_form">
+    <form class="col-6" action="http://icarus.cs.weber.edu/~linda/cs2350/submit_pet1.php"
+        method="post">
+        <h1>Entry Form</h1>
+        <label for="get_name_pet" class="main_form_label">Pet Name</label>
+        <input type="text" id="get_name_pet" name="get_name_pet">
+
+    <br/>
+        <input type="checkbox" id="singing_checkbox" name="singing_checkbox">
+        <label for="singing_checkbox" class="main_form_label">Singing Competition</label>
+
+        <ul>
+            <li>
+                <label for="get_name_entry">Name of Entry</label>
+                <input type="text" id="get_name_entry" name="get_name_entry">
+            </li>
+            <li>
+                <label for="get_demo">Upload Demo (mp3 or wav)</label>
+                <input type="file" id="get_demo" name="get_demo">
+            </li>
+        </ul>
+
+        <input type="checkbox" id="cutest_checkbox" name="cutest_checkbox">
+        <label for="cutest_checkbox" class="main_form_label">Cutest Pet Competition</label>
+
+        <ul>
+            <li>
+                <label for="get_name_entry2">Name of Entry</label>
+                <input type="text" id="get_name_entry2" name="get_name_entry2">
+            </li>
+
+            <li>
+                <label for="get_photo">Upload Photo(jpg, png, or gif)</label>
+                <input type="file" id="get_photo" name="get_photo">
+            </li>
+        </ul>
+
+        <input type="checkbox" id="tricks_checkbox" name="tricks_checkbox">
+        <label for="tricks_checkbox" class="main_form_label">Pet Tricks Competition</label>
+
+        <ul>
+            <li>
+                <label for="get_name_entry3">Name of Entry</label>
+                <input type="text" id="get_name_entry3" name="get_name_entry3">
+            </li>
+
+            <li>
+                <select>
+                    <option>Obstacle</option>
+                    <option>Frisbee/Ball/Other Catching</option>
+                    <option>Roll Over/Play Dead</option>
+                    <option>Other</option>
+                </select>
+            </li>
+        </ul>
+
+        <label class="main_form_label">What Kind of Pet?</label><br/>
+        <input type="radio" name="pet_type" id="pet_type_1">
+        <label for="pet_type_1">Cat</label><br/>
+
+        <input type="radio" name="pet_type" id="pet_type_2">
+        <label for="pet_type_2">Dog</label><br/>
+
+        <input type="radio" name="pet_type" id="pet_type_3">
+        <label for="pet_type_3">Reptile</label><br/>
+
+        <input type="radio" name="pet_type" id="pet_type_4">
+        <label for="pet_type_4">Bird</label><br/>
+
+        <input type="radio" name="pet_type" id="pet_type_5">
+        <label for="pet_type_5">Rodent</label><br/>
+
+        <label for="pet_birthday" class="main_form_label">Pet Birth Date (mm/dd/yy)</label>
+        <input type="text" name="pet_birthday" id="pet_birthday"><br/>
+
+        <label for="pet_bio" class="main_form_label">Pet Bio</label><br/>
+        <label for="pet_bio">Tells us about your pet..</label><br/>
+        <textarea id="pet_bio" name="pet_bio"></textarea><br/>
+
+        <label for="get_contact_phone" class="main_form_label">Phone Number</label>
+        <input type="text" id="get_contact_phone" name="get_contact_phone"><br/>
+
+        <label class="main_form_label">Login Info</label>
+        <p class="login_info">
+            This information will be used to provide future access to this registration info
+        </p>
+
+        <label for="username" class="main_form_label">Username</label>
+        <input type="text" id="username" name="username">
+        <p class="login_info">5-8 characters long, letters only</p>
+
+        <label for="password" class="main_form_label">Password</label>
+        <input type="text" id="password" name="password">
+        <p class="login_info">At least 8 characters long and include at
+        least 3 of the following: lowercase letter, uppercase letter
+        , number, special character</p>
+
+        <input type="submit" name="submit"/>
+
+    </form>
+</section>
+</body>
+</html>

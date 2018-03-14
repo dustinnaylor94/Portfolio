@@ -40,7 +40,7 @@ body{
     color: #e5d0ae;
 }
 
-a{
+a, nav button{
     color: #ed6240;
     text-decoration: none;
 }
@@ -51,8 +51,12 @@ a{
     border: 2px solid #ed6240 ;
     padding: 25px;
     font-size: 20px;
+    list-style: none;
 }
 
+#movieList ul li{
+  margin: 15px;
+}
 table{
     /*background-color: rgba(35,167,224,.5);
     border-radius: 25px;
@@ -172,7 +176,7 @@ nav li{
     display: inline;
 }
 
-nav a{
+nav a, nav button {
     border: 4px solid #ed6240;
     padding: 10px;
     margin: 5px;
@@ -184,22 +188,41 @@ nav a{
     text-align: center;
 }
 
-nav a:hover{
+nav a:hover, nav button:hover{
     background-color: #ed6240;
     color: #e5d0ae;
 }
 
-nav a:active{
+nav a:active, nav button:active{
     background-color: #b23213;
     transform: translateY(4px);
     box-shadow: 0px 4px 5px #000000;
+}
+
+.dropDown {
+  position: relative;
+}
+
+.dropDown_content {
+  position: absolute;
+  display: none;
+  width: 100%;
+}
+
+nav button {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.dropDown:hover .dropDown_content {
+  display: block;
 }
 
 @media screen and (min-width: 768px){
     nav li{
         display: inline-block;
     }
-    nav a{
+    nav a, nav button{
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -218,7 +241,6 @@ nav a.current:hover{
     background-color: #ed6240;
 }
 #intro{
-    position: relative;
 }
 #specialButton{
     text-align: center;
@@ -319,4 +341,47 @@ nav a.current:hover{
     3% {transform: translate(-600px, 390px)}
     10% {transform: translate(-100px, 40px)}
     100% {transform: translate(0px, 40px)}
+}
+
+form {
+  background-color: rgba(227,208,173, .8);
+  color: #ed6240;
+  border: 2px solid #ed6240;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 5px 100px 5px 375px;
+}
+
+form label {
+  display: inline-block;
+  cursor: pointer;
+  /*font-weight: bold;*/
+  text-shadow: 1px 1px 0px #b9b9b9;
+  padding: 3px;
+}
+
+form h1 {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  text-shadow: 1px 1px 0px #b9b9b9;
+}
+
+form ul {
+  list-style: none;
+}
+
+.main_form_label {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+textarea {
+  width: 100%;
+  height: 300px;
+}
+
+.login_info {
+  color: #ed6240;
 }
