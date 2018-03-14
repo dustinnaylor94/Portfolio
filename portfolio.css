@@ -203,6 +203,11 @@ nav a:active{
         padding-left: 20px;
         padding-right: 20px;
     }
+    #specialButton:hover{
+        transition: all 1s ease-in-out;
+        background: #1d304c;
+        color: #ed6240;
+    }
 }
 
 nav a.current{
@@ -211,4 +216,107 @@ nav a.current{
 
 nav a.current:hover{
     background-color: #ed6240;
+}
+#intro{
+    position: relative;
+}
+#specialButton{
+    text-align: center;
+    font-size: larger;
+    color: #1d304c;
+    border: 3px solid #ed6240;
+    border-radius: 20px;
+    width: 10%;
+    height: 100px;
+    background: #ed6240;
+    margin: 0px 20px 0px 20px;
+
+}
+#specialButton:hover{
+    transition: all 1s ease-in-out;
+    background: #1d304c;
+    color: #ed6240;
+    transform: translate(100px);
+
+}
+#advancedAside{
+    float: right;
+    position: relative;
+}
+#scene{
+    margin-top: 30px ;
+    position: relative;
+    height: 800px;
+}
+#pond{
+    background: aqua;
+    border-radius: 10%;
+    height: 100%;
+    width: 100%;
+}
+#fish{
+    border: none;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    transform: translate(10000px);
+    animation-name: fish;
+    animation-duration: 30s;
+}
+#puffer{
+    transform: translate(-1000px, 300px);
+    border: none;
+    width: 200px;
+    height: 200px;
+    animation-name: puffer;
+    animation-duration: 30s;
+}
+#hook{
+    width: 50px;
+    height: 100px;
+    border: none;
+    transform: translate(0px, 10000px);
+}
+#bubble{
+    border: none;
+    height: 50px;
+    width: 50px;
+    transform: translate(1200px);
+    animation-name: bubble;
+    animation-duration: 30s;
+ }
+#bubble2{
+    border: none;
+    height: 50px;
+    width: 50px;
+    transform: translate(-600px, 390px);
+    animation-name: bubble2;
+    animation-duration: 30s;
+}
+@keyframes puffer {
+    10% {transform: translate(0px, 500px)}
+    20% {transform: translate(0px, 550px)}
+    50% {
+        transform: translate(0px, 500px)
+        scale(2);
+    }
+    60% {transform: translate(-1000px) scale(-1)}
+
+}
+@keyframes fish {
+    20% {transform: translate(390px, 500px)}
+    40% {transform: translate(585px, 560px)}
+
+}
+@keyframes bubble {
+    0% {transform: translate(1200px, 390px)}
+    10% {transform: translate(1200px, 390px)}
+    15% {transform: translate(950px, 40px)}
+    100% {transform: translate(900px, 40px)}
+
+}
+@keyframes bubble2 {
+    3% {transform: translate(-600px, 390px)}
+    10% {transform: translate(-100px, 40px)}
+    100% {transform: translate(0px, 40px)}
 }
