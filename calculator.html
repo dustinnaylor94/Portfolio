@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Dustin Naylor - Calculator</title>
+
+    <meta name="description" content="Calculator">
+    <meta name="keywords" content="calculator">
+    <meta name="author" content= "Dustin Naylor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/d_tab.png"/>
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+
+    <script src="calculator.js"></script>
+
+</head>
+<body>
+<header>
+    <img src="img/d_large.png" id="headerLogo" alt="D logo"/>
+    <h1 class="headerTitle">Dustin Naylor's CS2350 Portfolio</h1>
+    <h2>Calculator</h2>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="my_hobbies.html">Hobbies</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li>
+            <div class="dropDown">
+                <button>Examples &#x25BC;</button>
+                <div class= "dropDown_content">
+                    <a href="advancedCss.html">Advanced CSS</a>
+                    <a href="youthFutures.html">Youth Futures</a>
+                    <a href="pet_show.html">Pet Comp</a>
+                    <a href="story.html">Story Time</a>
+                    <a href="slideshow.html">Saab Slideshow</a>
+                    <a href="calculator.html" class="current">Calculator</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</nav>
+<div class="headerTitle">
+    <h1>Time to Calcualte!</h1>
+    <h4>A little taste of JS</h4>
+</div>
+
+<section id="calculatorSection">
+    <table class="calcMain">
+        <tr class="calc">
+            <td class="calc" id="calcInput"><input type="text" id="input" value=""></td>
+        </tr></table>
+    <table class="calcMain">
+        <tr class="calc">
+            <td class="calc"><button class="calcButton" type="button" value="1" id="1">1</button></td>
+            <td class="calc"><button class="calcButton" type="button" value="2" id="2">2</button></td>
+            <td class="calc"><button class="calcButton" type="button" value="3" id="3">3</button></td>
+            <td class="calc"><button class="calcButton" type="button" value="+" id="+">+</button></td>
+        </tr>
+        <tr class="calc">
+            <td class="calc"><button class="calcButton" type="button" value="4" id="4">4</button></td>
+            <td class="calc"><button class="calcButton" type="button" value="5" id="5">5</button></td>
+            <td class="calc"><button class="calcButton" type="button" value="6" id="6">6</button></td>
+            <td class="calc"><button class="calcButton" type="button" value="-" id="-">-</button></td>
+        </tr>
+        <tr class="calc">
+            <td class="calc"><button class="calcButton" type="button" value="7" id="7">7</button></td>
+            <td class="calc"><button class="calcButton" type="button" value="8" id="8">8</button></td>
+            <td class="calc"><button class="calcButton" type="button" value="9" id="9">9</button></td>
+            <td class="calc"><button class="calcButton" type="button" value="*" id="x">X</button></td>
+        </tr>
+        <tr class="calc">
+            <td class="calc"><button class="calcButton" type="button" value="C" id="c">C</button></td>
+            <td class="calc"><button class="calcButton" type="button" value="0" id="0">0</button></td>
+            <td class="calc"><button class="calcButton" type="button" value="=" id="=">=</button></td>
+            <td class="calc"><button class="calcButton" type="button" value="/" id="/">/</button></td>
+        </tr>
+    </table>
+    <table class="calcMain">
+        <tr class="calc">
+            <td class="calc"><button class="calcButton" type="button" value="X^2" id="squared">X^2</button></td>
+            <td class="calc"><button class="calcButton" type="button" value="1/2" id="1/2">1/2</button></td>
+            <td class="calc" id="area"><button class="calcButton" type="button" value="area" id="areaButton">area</button></td>
+        </tr>
+    </table>
+</section>
+<footer>
+    <p>
+        Thank You for Visiting! -Dustin Naylor
+    </p>
+</footer>
+</body>
+</html>

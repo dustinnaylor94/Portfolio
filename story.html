@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Portfolio-Dustin Naylor</title>
+
+    <meta name="description" content="Story page">
+    <meta name="keywords" content="Story, Mad Lib">
+    <meta name="author" content= "Dustin Naylor">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/d_tab.png"/>
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+
+    <script>
+        function handleWords() {
+            var one = document.getElementById("1").value;
+            var name = document.getElementById("2").value;
+            var three = document.getElementById("3").value;
+            var four = document.getElementById("4").value;
+            var five = document.getElementById("5").value;
+            var six = document.getElementById("6").value;
+            var seven = document.getElementById("7").value;
+            var eight = document.getElementById("8").value;
+            var nine = document.getElementById("9").value;
+            var ten = document.getElementById("10").value;
+            var eleven = document.getElementById("11").value;
+            var twelve = document.getElementById("12").value;
+            var thirteen = document.getElementById("13").value;
+            var fourteen = document.getElementById("14").value;
+            var fifteen = document.getElementById("15").value;
+            var sixteen = document.getElementById("16").value;
+            var seventeen = document.getElementById("17").value;
+            var eighteen = document.getElementById("18").value;
+            var nineteen = document.getElementById("19").value;
+
+            document.getElementById("story").innerHTML = "<p> It was a " +
+                "very <span>" + one + "</span> afternoon. <span>" + name + "</span>, a <span>" + three +
+            "</span> year old <span>" + four + "</span> was on his way home from work, when his " +
+                "stomach grumbled like the <span>" + five + "</span> of a <span>" + six + "</span><span> " + seven + "</span>!</p>" +
+                "<p> \" I don\'t know if I\'m going to make it home! \" <span>" + name + "</span> frantically " +
+                "thought to himself as he <span>" + eight + "</span> walked down the <span>" + nine + " " + ten +
+                "</span> street. He was only 2 blocks away from his <span>" + eleven + " " + twelve + "</span>, but fatigue " +
+                "from his <span>" + thirteen + "</span> belly was slowly <span>" + fourteen + "</span>ing him to a crawl.</p>" +
+                "<p>Suddenly, <span>" + name + "</span> caught a whiff of something <span>" + fifteen + "</span> in the air.</p>" +
+                "<p>\"<span>" + sixteen + "</span>\"! <span>" + name + "</span> screamed!</p><p> Finding a new burst of" +
+                " energy, <span>" + name + " " + seventeen + "</span> around the corner into Dana\'s <span>" + eighteen + "</span> and" +
+                " enjoyed a delicious plate of <span>" + nineteen + "</span> and <span>" + sixteen + "</span>.</p><p>The End</p>";
+        }
+    </script>
+</head>
+<body>
+<header>
+    <img src="img/d_large.png" id="headerLogo" alt="D logo"/>
+    <h1 class="headerTitle">Dustin Naylor's CS2350 Portfolio</h1>
+    <h2>Story Time</h2>
+</header>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="my_hobbies.html">Hobbies</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li>
+            <div class="dropDown">
+                <button>Examples &#x25BC;</button>
+                <div class= "dropDown_content">
+                    <a href="advancedCss.html">Advanced CSS</a>
+                    <a href="youthFutures.html">Youth Futures</a>
+                    <a href="pet_show.html">Pet Comp</a>
+                    <a href="story.html" class="current">Story Time</a>
+                    <a href="slideshow.html">Saab Slideshow</a>
+                    <a href="calculator.html">Calculator</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</nav>
+<div class="headerTitle">
+    <h1>Hungry</h1>
+    <h4>Let's Write a Story Together!</h4>
+</div>
+
+<section>
+    <p>A Mad Lib is a hilarious game where the player is asked to
+    provide a certain number of random words that match a certain
+    gramatical type (ie: noun, adjective, verb, etc.) The given
+    words are then injected into gaps in a story! Since the user
+    doesn't know the story, sometimes the given words can REALLY
+    clash and create one gut-busting tale! Give it a try by entering
+    your words in the fields below:</p>
+    <div id="madlibEntries" class="col-3">
+        <label for="1">Adj: </label><input type="text" id="1"/>
+        <label for="2">Male Name: </label><input type="text" id="2"/>
+        <label for="3">Number: </label><input type="text" id="3"/>
+        <label for="4">Noun: </label><input type="text" id="4"/>
+        <label for="5">Sound: </label><input type="text" id="5"/>
+        <label for="6">Adj: </label><input type="text" id="6"/>
+        <label for="7">Noun: </label><input type="text" id="7"/>
+        <label for="8">Adv: </label><input type="text" id="8"/>
+        <label for="9">Adj: </label><input type="text" id="9"/>
+        <label for="10">Adj: </label><input type="text" id="10"/>
+        <label for="11">Adj: </label><input type="text" id="11"/>
+        <label for="12">Noun: </label><input type="text" id="12"/>
+        <label for="13">Adj: </label><input type="text" id="13"/>
+        <label for="14">Verb: </label><input type="text" id="14"/>
+        <label for="15">Adj: </label><input type="text" id="15"/>
+        <label for="16">Noun: </label><input type="text" id="16"/>
+        <label for="17">Verb(past tense): </label><input type="text" id="17"/>
+        <label for="18">Noun: </label><input type="text" id="18"/>
+        <label for="19">Noun: </label><input type="text" id="19"/>
+        <button type="button" onclick="handleWords()">Generate!</button>
+    </div>
+
+    <div class="col-8" id="story">
+        <!--<p>-->
+            <!--It was a very (adj) afternoon. (Male name), a (number)-->
+            <!--year old (noun) was on his way home from work, and his-->
+            <!--stomach grumbled like the (sound) of a (adj) (noun)!-->
+        <!--</p>-->
+        <!--<p>-->
+            <!--“I don’t know if I’m going to make it home!” ]-->
+            <!--(Male name) frantically thought to himself as he-->
+            <!--(adverb) walked down the (adj), (adj) street. He was-->
+            <!--only 2 blocks away from his (adj) (noun), but fatigue-->
+            <!--from his (adj) belly was slowly (verb)ing him to a crawl.-->
+        <!--</p>-->
+        <!--<p>-->
+            <!--Suddenly, (Male name) caught a whiff of something (adj) in the air.-->
+        <!--</p>-->
+        <!--<p>-->
+            <!--“(noun)!” (male name) screamed!-->
+        <!--</p>-->
+        <!--<p>-->
+            <!--Finding a new burst of energy, (male name)-->
+            <!--(verb) around the corner into Dana’s (noun) and enjoyed-->
+            <!--a delicious plate of (noun) and (previous noun).-->
+        <!--</p>-->
+        <!--<p>-->
+            <!--The End-->
+        <!--</p>-->
+    </div>
+</section>
+</body>
+</html>
